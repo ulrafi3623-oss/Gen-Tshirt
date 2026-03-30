@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Meet Oak Street Tee Co. — a Riverside t-shirt shop focused on soft fabrics, local art, and custom printing." />
+  <title>About Us | Oak Street Tee Co.</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Oak Street Tee Co.</a>
+      <a class="header-phone" href="tel:+8801602002105">01602002105</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" data-nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Collections</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 2rem 0 2.5rem;">
+      <div class="container">
+        <h1>About Us</h1>
+        <p class="hero__sub">We are a local tee shop built around soft fabrics, bold art, and friendly service. Everything we print is made to be worn on repeat.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container prose">
+        <h2>Who we are</h2>
+        <p>Oak Street Tee Co. started as a weekend pop-up with a few graphic tees and a borrowed screen. Today we are a Riverside storefront that prints locally, collaborates with artists, and keeps a rotating shelf of premium basics.</p>
+        <h2>Why local matters</h2>
+        <p>When you stop by, you meet the people who designed the graphics and pulled the prints. We build collections that reflect our neighborhood, our music, and our culture, and we keep sizes inclusive so everyone feels at home.</p>
+        <h2>Quality you can feel</h2>
+        <p>We choose heavyweight cotton, soft tri-blends, and water-based inks that stay smooth over time. Our team fits every style and washes test pieces so each tee feels right from day one.</p>
+        <p class="text-center" style="margin-top: 2rem;">
+          <a class="btn btn--primary btn--lg" href="contact.html#quote">Start a custom order</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3>Oak Street Tee Co.</h3>
+          <p>1200 Oak Street<br />Riverside, CA 92501</p>
+          <p><a href="tel:+8801602002105">01602002105</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Mon–Fri 10am–7pm · Sat 11am–5pm</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="services.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__bottom">© <span id="y"></span> Oak Street Tee Co.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-call" data-sticky-call>
+    <a class="btn btn--primary btn--lg" href="shop.html">Shop now</a>
+    <a class="btn btn--secondary btn--lg" href="tel:+8801602002105">Call</a>
+  </div>
+  <a class="whatsapp-float" href="#" data-whatsapp target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">Chat</a>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

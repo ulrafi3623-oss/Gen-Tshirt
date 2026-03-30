@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shop graphic tees, premium basics, and custom prints at Gen T-shirts Riverside CA. Add to cart and checkout." />
+  <title>Shop | Gen T-shirts</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Gen T-shirts</a>
+      <a class="header-phone" href="tel:+8801602002105">01602002105</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" data-nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Collections</a>
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Shop Tees</h1>
+        <p class="hero__sub">Graphic tees, premium basics, and streetwear fits — made to feel soft and look sharp. Checkout with phone/address (COD).</p>
+        <a class="btn btn--secondary" href="tel:+8801602002105">Call Now to Order</a>
+      </div>
+    </section>
+
+    <section class="section section--alt" style="padding: 2rem 0;">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-banner__content">
+            <span class="hero__badge">Limited Offer</span>
+            <h2>Fresh Drop: Midnight Graphic</h2>
+            <p>Get our best-selling graphic tee before it sells out. Premium heavyweight cotton.</p>
+            <button class="btn btn--primary shop-add" data-id="p1">Quick Add - $32</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Featured Picks</h2>
+        <p class="section__lead">A few best sellers to get you started.</p>
+        <div class="cards cards--3">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Classic white t-shirt on a model" class="product-thumb" style="width:100%;border-radius:12px;margin-bottom:1rem;" />
+            <h3>Classic White Tee</h3>
+            <p>Heavyweight cotton with a clean, structured drape.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1520975922284-5e0c45b82899?auto=format&fit=crop&w=800&q=80" alt="Black graphic t-shirt with bold print" class="product-thumb" style="width:100%;border-radius:12px;margin-bottom:1rem;" />
+            <h3>Midnight Graphic</h3>
+            <p>Bold print with a soft, broken-in feel.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Stack of colorful t-shirts" class="product-thumb" style="width:100%;border-radius:12px;margin-bottom:1rem;" />
+            <h3>Color Pack</h3>
+            <p>Three-pack of seasonal hues in your fit of choice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Full Catalog</h2>
+        <p class="section__lead">Browse the live collection below and build your cart.</p>
+        <div id="shop-grid" class="cards cards--3"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Your Cart</h2>
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="background:var(--color-surface);">
+              <th style="padding:0.75rem 1rem;text-align:left;">Item</th>
+              <th style="padding:0.75rem 1rem;text-align:center;min-width:60px;">Qty</th>
+              <th style="padding:0.75rem 1rem;text-align:right;min-width:100px;">Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="shop-cart-body"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" style="padding:1rem;text-align:right;font-weight:600;">Total: <span id="shop-cart-total">$0</span></td>
+              <td colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <form id="shop-checkout-form" style="max-width:500px;margin-top:1.5rem;">
+          <div class="form">
+            <input id="shop-name" name="name" type="text" placeholder="Full name" autocomplete="name" required />
+            <input id="shop-phone" name="phone" type="tel" placeholder="Phone" autocomplete="tel" required />
+            <input id="shop-address" name="address" type="text" placeholder="Address (street, city)" />
+            <button type="submit" class="btn btn--primary btn--lg btn--block">Place Order (COD)</button>
+          </div>
+        </form>
+        <p id="shop-order-result" style="margin-top:1rem;color:var(--color-accent);"></p>
+        <p id="shop-toast" style="opacity:0;transition:opacity 0.3s;position:fixed;bottom:1rem;right:1rem;background:#4a7c59;color:white;padding:1rem;border-radius:8px;"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Gen T-shirts. Orders sync to admin real-time.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-call" data-sticky-call>
+    <a class="btn btn--primary btn--lg" href="shop.html">Shop now</a>
+    <a class="btn btn--secondary btn--lg" href="tel:+8801602002105">Call</a>
+  </div>
+
+  <script src="js/orders-store.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="T-shirt collections in Riverside CA. Graphic tees, premium basics, streetwear fits, and custom prints at Oak Street Tee Co." />
+  <title>Collections | Oak Street Tee Co.</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Oak Street Tee Co.</a>
+      <a class="header-phone" href="tel:+8801602002105">01602002105</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" data-nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Collections</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 2rem 0 2.5rem;">
+      <div class="container">
+        <h1>Collections</h1>
+        <p class="hero__sub">Graphic tees, premium basics, streetwear fits, and custom prints — browse the styles that match your vibe.</p>
+        <a class="btn btn--primary" href="shop.html">Shop the latest</a>
+        <a class="btn btn--secondary" href="tel:+8801602002105" style="margin-left: 0.5rem;">Call Now</a>
+        <a class="btn btn--secondary" href="contact.html" style="margin-left: 0.5rem;">Start custom order</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="service-block">
+          <h2>Graphic tees</h2>
+          <p>Original artwork, limited runs, and bold graphics printed on soft, midweight cotton.</p>
+          <ul class="service-benefits">
+            <li>Artist collaborations and local drops</li>
+            <li>Classic and oversized fits in core colors</li>
+            <li>Durable, water-based inks</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn btn--primary" href="shop.html">Shop graphics</a>
+            <a class="btn btn--secondary" href="tel:+8801602002105">Call Now</a>
+            <a class="btn btn--secondary" href="contact.html">Ask about sizes</a>
+          </div>
+        </article>
+
+        <article class="service-block">
+          <h2>Premium basics</h2>
+          <p>Minimal, everyday tees with heavyweight cotton and clean silhouettes.</p>
+          <ul class="service-benefits">
+            <li>Soft combed cotton and tri-blends</li>
+            <li>Classic, relaxed, and boxy fits</li>
+            <li>Neutral and seasonal colorways</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn btn--primary" href="shop.html">Shop basics</a>
+            <a class="btn btn--secondary" href="tel:+8801602002105">Call Now</a>
+            <a class="btn btn--secondary" href="contact.html">Find your fit</a>
+          </div>
+        </article>
+
+        <article class="service-block">
+          <h2>Custom printing</h2>
+          <p>Team orders, brand merch, and event tees with quick turnaround and design support.</p>
+          <ul class="service-benefits">
+            <li>Bulk pricing for teams and businesses</li>
+            <li>Print samples and mockups included</li>
+            <li>Multiple tee blanks and ink finishes</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn btn--primary" href="contact.html#quote">Get a quote</a>
+            <a class="btn btn--secondary" href="tel:+8801602002105">Call Now</a>
+            <a class="btn btn--secondary" href="contact.html">Schedule a consult</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3>Oak Street Tee Co.</h3>
+          <p>1200 Oak Street<br />Riverside, CA 92501</p>
+          <p><a href="tel:+8801602002105">01602002105</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Mon–Fri 10am–7pm · Sat 11am–5pm</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="site-footer__bottom">© <span id="y"></span> Oak Street Tee Co.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-call" data-sticky-call>
+    <a class="btn btn--primary btn--lg" href="shop.html">Shop now</a>
+    <a class="btn btn--secondary btn--lg" href="tel:+8801602002105">Call</a>
+  </div>
+  <a class="whatsapp-float" href="#" data-whatsapp target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">Chat</a>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
